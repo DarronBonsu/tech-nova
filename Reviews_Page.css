@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #748b91;
+}
+
+/* Scope styles to the review container only */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #c1d1cf;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .container{
+    background-color: #444;
+}
+
+/* Product Details */
+.container h2 {
+    color: #333;
+    text-align: center;
+}
+
+body.dark-mode h2{
+    color: white;
+}
+
+
+
+.product-image {
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Review Form */
+.container form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .container form{
+    background-color: #444;
+}
+
+
+.container form label {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+body.dark-mode .container label{
+    color: white;
+}
+
+.container input[type="number"],
+.container textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body.dark-mode .container input[type="number"],
+body.dark-mode .container textarea {
+    background-color: #444;
+    border: 1px solid #ccc;
+    color: white;
+}
+
+.container textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+
+.container button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+/* Reviews Section */
+.container h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+body.dark-mode .container h3{
+    color: white;
+}
+
+.container .review-box {
+    background: #fafafa;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+body.dark-mode .review-box{
+    background-color: #444;
+}
+
+.container .review-box p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+}

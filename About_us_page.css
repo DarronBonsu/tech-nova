@@ -1,0 +1,102 @@
+body {
+    background-color: #748b91;
+}
+
+.about-us-container {
+    background-color: #c1d1cf;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    color: black; /* Changed text color to black */
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .about-us-container{
+    background: linear-gradient(135deg, #121212, #333333); /* Dark gradient */
+   color: white;
+   box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1); /* Lighter shadow in dark mode */
+}
+
+.big-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.big-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black; /* Changed text color to black */
+    margin-bottom: 20px;
+}
+
+body.dark-mode .big-text h1{
+    color: white;
+}
+
+.big-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black; /* Changed text color to black */
+}
+
+body.dark-mode .big-text p{
+    color: white;
+}
+
+/* Sub-text parts containers */
+.sub-text-sections {
+    display: flex;
+    flex-wrap: wrap; /* Adjust layout for smaller screens */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Individual sub-text section */
+.sub-text {
+    flex: 1 1 calc(25% - 20px); /* Four equal boxes with space */
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+body.dark-mode .sub-text{
+    background-color: #444; /* Darker background for cards */
+    border-color: #555; /* Lighter border for dark mode */
+    color:white;
+}
+
+.sub-text h2 {
+    font-size: 20px;
+    color: black; /* Changed text color to black */
+    margin-bottom: 10px;
+}
+
+body.dark-mode .sub-text h2{
+    color: white;
+}
+
+.sub-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black; 
+}
+
+body.dark-mode .sub-text p{
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sub-text-sections {
+        flex-direction: column;
+    }
+
+    .sub-text {
+        flex: 1 1 100%; /* Full width per box */
+    }
+}

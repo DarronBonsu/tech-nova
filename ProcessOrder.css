@@ -1,0 +1,358 @@
+/* General Styles for Order Processing */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #748b91; /* Light background color */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Container for Order Processing Page */
+.container {
+    width: 85%; 
+    margin: 30px auto;
+    background: #c1d1cf;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Header for Order Processing Page */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+body.dark-mode .header h1{
+    color: white;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Filters Section */
+.filters {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+body.dark-mode .filters{
+    background-color: #444;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+}
+
+body.dark-mode .filters label{
+   color: white;
+}
+
+
+select, input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Orders Table */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Table Header */
+.orders-table th, .orders-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.orders-table th {
+    background-color: #2980b9; /* Blue for headers */
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body.dark-mode .filters tr{
+    color: #444;
+ }
+/* Table Row Styling */
+.orders-table tr:nth-child(even) {
+    background-color: #f4f4f4; /* Light gray for even rows */
+}
+
+.orders-table tr:hover {
+    background-color: #ecf0f1; /* Hover effect for rows */
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    width: 80px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-pending {
+    background-color: #ffeeba;
+    color: #856404;
+}
+
+.status-processing {
+    background-color: #b8daff;
+    color: #004085;
+}
+
+.status-shipped {
+    background-color: #c3e6cb;
+    color: #155724;
+}
+
+.status-delivered {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-cancelled {
+    background-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Pending Orders Section */
+.pending-orders h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+body.dark-mode .accepted-orders h2 {
+color: white;
+}
+
+.pending-orders .orders-table {
+    margin-top: 30px;
+}
+
+/* Actions Section for Buttons */
+.actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.actions .btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.actions .btn-success:hover {
+    background-color: #218838;
+}
+
+.actions .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.actions .btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Accepted Orders Section */
+.accepted-orders {
+    margin-top: 40px;
+}
+
+.accepted-orders h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Apply Filters Button */
+#applyFiltersBtn {
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#applyFiltersBtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Refresh Data Button */
+#refreshBtn {
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#refreshBtn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+
+.accepted-orders .orders-table {
+    margin-top: 30px;
+}
+
+/* Change Status Dropdown */
+.status-dropdown {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Save and Cancel Buttons */
+.accepted-orders .actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.accepted-orders .btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.accepted-orders .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.accepted-orders .btn-success:hover, .accepted-orders .btn-danger:hover {
+    opacity: 0.8;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: white; /* White text color */
+}
+
+/* Dark Mode Dashboard Container */
+body.dark-mode .container {
+    background-color: #1e1e1e; /* Darker background */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow in dark mode */
+}
+
+/* Dark Mode Orders Table */
+body.dark-mode .orders-table th {
+    background-color: #2980b9;
+}
+
+body.dark-mode .orders-table tr:nth-child(even) {
+    background-color: #333;
+}
+
+body.dark-mode .orders-table tr:nth-child(odd) {
+    background-color: #444;
+}
+
+
+
+/* Dark Mode Button Styling */
+body.dark-mode .btn {
+    color: white;
+}
+
+body.dark-mode .btn-success {
+    background-color: #28a745;
+}
+
+body.dark-mode .btn-success:hover {
+    background-color: #218838;
+}
+
+body.dark-mode .btn-danger {
+    background-color: #dc3545;
+}
+
+body.dark-mode .btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Smooth transition for table */
+.orders-table th, .orders-table td, .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Container takes more space on smaller screens */
+    }
+
+    .container h1,
+    .container h2 {
+        font-size: 1.8rem; /* Smaller font for smaller screens */
+    }
+
+    .orders-table th, .orders-table td {
+        font-size: 0.9rem;
+        padding: 10px; /* Smaller padding on smaller screens */
+    }
+
+    .actions button {
+        width: 100%;
+    }
+
+    .status-dropdown {
+        width: 100%;
+    }
+}

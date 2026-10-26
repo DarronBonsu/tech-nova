@@ -1,0 +1,95 @@
+body {
+    background-color: #748b91;
+}
+
+.loginuser, .sendtheOTP, .entertheOTP, .choosenewpassword {
+    background-color: #c1d1cf;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+}
+
+.loginuser h1{
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    color: #333;
+}
+
+body.dark-mode .loginuser,body.dark-mode .sendtheOTP,body.dark-mode .entertheOTP,body.dark-mode .choosenewpassword {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .loginuser input,body.dark-mode .sendtheOTP input,body.dark-mode .entertheOTP input,body.dark-mode .choosenewpassword input{
+    color:white;
+}
+
+body.dark-mode .loginuser ::placeholder,body.dark-mode .sendtheOTP ::placeholder,body.dark-mode .entertheOTP ::placeholder,body.dark-mode .choosenewpassword ::placeholder{
+    color:white;
+}
+
+body.dark-mode .loginuser h1,body.dark-mode .sendtheOTP h1,body.dark-mode .entertheOTP h1,body.dark-mode .choosenewpassword h1{
+    color:white;
+}
+
+body.dark-mode .loginuser label{
+    color:white;
+}
+
+
+
+.entrybox {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #848484;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.entrybox input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(116, 139, 145, 0.5);
+}
+
+.signupbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.loginuser button, .signupbutton button, .loged, .signup, .sendtheOTP button, .entertheOTP button, .choosenewpassword button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginuser button:hover, .signupbutton button:hover, .loged:hover, .signup:hover {
+    background-color: #0056b3;
+}
+
+#forgetlink {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .signup-container {
+        padding: 20px;
+    }
+}
