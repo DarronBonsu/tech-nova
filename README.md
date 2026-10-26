@@ -20,5 +20,4 @@ PHP, MySQL, JavaScript, HTML, CSS. PDF export uses [TCPDF](https://github.com/te
 3. Check the database settings in `connectdb.php`.
 4. Run `composer install` to restore PHPMailer, then open the site in your browser.
 
-## Screenshots
-Add screenshots here.
+
